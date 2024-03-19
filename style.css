@@ -27,12 +27,16 @@ li {
     list-style-type: none ;
 }
 
+.flex-1 {
+    flex: 1;
+}
+
 .flex {
     display: flex;
 }
 
-.flex-1 {
-    flex: 1;
+.contanier {
+    padding: 50px 0;
 }
 
 .row {
@@ -41,8 +45,16 @@ li {
     margin: 0 auto;
 }
 
-.text--purple {
+.text-purple {
     color: #6030b1;
+}
+
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.section__title{
+    margin-bottom: 20px;
 }
 
 /* navigation bar */
@@ -95,6 +107,11 @@ nav {
 
 }
 
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-me__info--container {
     display: flex;
     flex-direction: column;
@@ -124,11 +141,43 @@ nav {
 }
 
 .about-me__info--title {
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }
 
 .about-me__info--para {
     font: 20px;
     margin-bottom: 28px;
+}
+
+.about-me__link {
+     font-size: 20px;
+     color: black;
+     text-decoration: none;
+     padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img {
+    width: 100%;
+}
+
+
+/* TECH - STACK */
+
+.language__img {
+     width: 100%;
+     max-width: 100px;
+}
+
+.language__img--WARAPPER {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
 }
 
